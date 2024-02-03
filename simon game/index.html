@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        background: url(https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background_52683-33064.jpg?size=626&ext=jpg&ga=GA1.1.1085809007.1704710253&semt=ais);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      .gameboard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+       
+      }
+      #colorboard{
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin-top: 50px;
+        justify-content: space-evenly;
+      }
+      .color{
+        width: 190px;
+        height: 190px;
+        border: 5px solid black;
+        margin-top: 40px;
+        border-radius: 50px;
+
+      }
+      #yellow{
+        background-color: yellow;
+      }
+      #green{
+        background-color: green;
+
+      }
+      #red{
+        background-color: red;
+      }
+      #blue{
+        background-color: blue;
+      }
+      h1{
+        color: antiquewhite;
+      }
+      h2{
+        color: antiquewhite;
+      }
+      @media screen and (max-width:510px) {
+        .color{
+          width: 30vw;
+          height:  30vw;
+        }
+        #colorboard{
+          width: 70vw;
+
+
+        }
+        h2{
+          text-align: center;
+          font-size: medium;
+        }
+        body{
+        background: url(https://img.freepik.com/free-vector/abstract-realistic-technology-particle-background_52683-33064.jpg?size=626&ext=jpg&ga=GA1.1.1085809007.1704710253&semt=ais);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      }
+    </style>
+</head>
+<body>
+     <div class ="gameboard">
+         <h1>Simon game</h1>
+         <br>
+         <h2>press any button to play</h2>
+
+         <div id ='colorboard'>
+            <div id ="yellow" class ="color"></div>
+            <div id="green" class ="color"></div>
+            <div id="blue" class ="color"></div>
+            <div id="red" class ="color"></div>
+         </div>
+     </div>
+     
+
+    <script src="./app.js"></script>
+</body>
+</html>
