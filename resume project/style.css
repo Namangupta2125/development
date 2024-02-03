@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+    width: 100vw;
+    height: 470px;
+    background-image: url(./f1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+}
+.headerop{
+    margin-top: 25px;
+    display: flex;
+    width: 45vw;
+    justify-content: space-between;
+}
+.headeroptions{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(101, 101, 101);
+    font-size: x-large;
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+}
+.headeroptions:hover {
+    transform: scale(1.2);
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+.icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.iconimage{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.iconimage:hover {
+    box-shadow: 0px 0px 3px 2px  white;
+    
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myimage{
+   border-radius: 150px;
+   width: 300px;
+   height: 300px;
+   margin-top: -150px;
+   border: 5px solid white;
+  box-shadow: 0px 0px 10px 5px rgb(96, 78, 78);
+}
+/* .icon{
+    size: 10px 10px;
+} */
+.startingarticle{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    width: 65vw;
+    height: 250px;
+    font-size: x-large;
+}
+.skills{
+    margin-top: 170px;
+    width: 100vw;
+    height: 500px;
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skilldiv{
+    margin-top:50px ;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    align-items: baseline;
+    height: 150px;
+}
+.skilllevel{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+    
+}
+.skillbar{
+    background-color: rgb(190, 176, 176);
+    height: 40px;
+    width: 210px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px  rgb(69, 68, 68) inset;
+}
+.filled{
+    height: 40px;
+    background-color: blue;
+    border-radius: 20px;
+    
+}
+.he{
+    position: absolute;
+    margin-left: 65px;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 600;
+    color: white;
+    font-family: sans-serif;
+}
+.experience{
+    width: 68vw;
+    height: 1200px;
+    margin-top: 150px;
+}
+.worktitle{
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+    height: 50px;
+    margin-top: 20px;
+}
+.sec1{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 1100px;
+    margin-top: 22px;
+}
+.a1{
+   height: 33.33%;
+}
+.sec2{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 10%;
+    height: 1100;
+    margin-top: 22px;
+}
+.expdiv{
+    display: flex;
+    margin-top: 40px;
+}
+.sec3{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 1100px;
+    margin-top: 22px;
+}
+.expartdiv{
+    width: 100%;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+}
+.education{
+    margin-top: 150px;
+    width: 68vw;
+    height: 1200px;
+}
+.edutitle{
+    display: flex;
+    justify-content: space-between;
+    width: 265px;
+    height: 50px;
+    margin-top: 20px;
+}
+.Portfolio{
+    margin-top: 150px;
+    width: 100vw;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+.pdiv{
+    width: 65vw;
+    height: inherit;
+}
+.pa1{
+    width: 100%rem;
+    height: 42%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.pimgb{
+    width: 31.33%;
+    border-radius: 20px;
+    height: 100%;
+    display: inline-block;
+}
+.pimgb:hover{
+   filter: brightness(75%);
+   transition-duration: 0.5s;
+    transform: scale(1.1);
+    transition-timing-function: linear;
+}
+.contact{
+    margin-top: 150px;
+    width: 100%;
+    height: 700px;
+    background-color: rgb(23 2 41);
+}
+.contactdiv{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 100px;
+}
+.form{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.address{
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.ad{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    height: 50px;
+}
