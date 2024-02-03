@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./cezar-sampaio-O0JJMtM1EfU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   height: 100vh;
+}
+body button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 250%;
+    font-weight: bolder;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    justify-self: center;
+}
+
+#gamestatus{
+    width: 100vw;
+    height: 10vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 5;
+}
+
+#balle{
+    height:20px;
+        width:20px;
+        background-color:black;
+        border-radius:20px;
+        box-shadow:0 0 5px wheat;
+        position:absolute;
+        left:50%;
+        top:50%;
+}
+#board{
+    width: 100vw;
+    height: inherit;
+    margin-top: 3px;
+    box-shadow: 0 0 3px 10px whitesmoke;
+    position: relative;
+}
+#play2{
+    background-color: rgb(227, 143, 122);
+    width: 4cm;
+    height: 20px;
+    border-radius: 50px;
+    margin: 5px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+#gameover{
+    font-size: 250%;
+    color:white;
+    font-weight: bolder;
+    margin-top: 10%;
+    border-radius: 50px;
+}
+#rb{
+    width: 50%;
+    height: 25%;
+    box-shadow: 0 0 5px black;
+    color: salmon;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:400px){
+    body button{
+        font-size: large;
+        padding: 20px;
+    }
+    #score{
+        font-size: large;
+    }
+    #play2{
+       width: 2.54cm;
+       height: 15px;
+
+    }
+    #gameover{
+        font-size: 150%;
+    }
+    #rb{
+        font-size: large;
+    }
+    #balle{
+        height: 15px;
+        width: 15px;
+    }
+}
