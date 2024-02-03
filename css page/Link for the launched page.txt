@@ -1,0 +1,2 @@
+https://fascinating-meerkat-9508d5.netlify.app/
+this is link for launched page by netlify

@@ -1,0 +1,140 @@
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    background-color: black;
+    /* height: 50px; */
+    padding: 0;
+}
+.rw{
+   width: 40%;
+   display: flex;
+   /* margin-left: 5px; */
+   justify-content: space-between;
+}
+.navbar>.rw>a{
+   
+    text-decoration: none;
+    color: white;
+   font-weight: 470;
+   font-size: large;
+   width: 20%;
+   height: 55px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.navbar>.rw>a:hover{
+    background-color: rgb(245, 245, 228);
+    color:black;
+}
+.intro{
+    width: 100%;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/hd/2b96b2128401823.6155628f72540.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-position: 0px -200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.band{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.band>.para{
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: 475;
+    font-size: xx-large;
+}
+.band>.dv>p{
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.images{
+    width: 75%;
+}
+.name
+{
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    width: 55%;
+    margin-bottom: 5px;
+}
+.name>p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: 450;
+    
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tour{
+    height: inherit;
+    margin-top: 50px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+.para1{
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: 475;
+    font-size: xx-large;
+    color: white;
+    margin-top: 120px;
+}
+.cards{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width:55%;
+    margin-bottom: 200px;
+}
+.date{
+    color: rgb(189, 173, 173);
+}
+
+.contact{
+    display: flex;
+    height: 400px;
+    flex-direction:column ;
+
+    align-items: center;
+}
+.para3
+{
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: 480;
+    font-size: xx-large;
+    color: black;
+}
+.maincontact{
+    display: flex;
+    height: inherit;
+    width: 55%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.line1{
+    display:flex;
+    justify-content: space-between;
+}
+.btn1{
+    background-color: black;
+}
+.btn1:hover{
+    background-color: rgb(118, 106, 106);
+}
