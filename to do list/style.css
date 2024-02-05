@@ -1,0 +1,591 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: rgb(26, 6, 6);
+    width: 100vw;
+    height: 100vh;
+    /* overflow: auto; */
+}
+#baap{
+   background-image: url(./backgroundimages/annie-spratt-399PPQ9ROlo-unsplash.jpg);
+   width: 99.5vw;
+   min-height: 100vh;
+   background-size: cover;
+   background-attachment: fixed;
+   /* overflow: hidden; */
+   background-position: center;
+   background-repeat: no-repeat;
+   transform-origin:top right;
+   transition: rotate 2s ease-out;
+}   
+
+/* css for navbar start */
+nav {
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Segoe UI";
+    background:#060606;
+    color: rgb(205 185 185);
+    text-shadow: 0 0 3px aqua;
+    font-weight: bold;
+    height: 62px;
+    position: fixed;
+    width: 100vw;
+    border-bottom: 2px solid white;
+    box-shadow: 0 5px 5px black;
+}
+
+.right ul {
+    display: flex;
+    gap: 100px;
+
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: none;
+    font-size: larger;
+}
+.right ul li span{
+    padding: 0 5px;
+}
+li:hover{
+  transform: scale(1.25);
+  transition-timing-function: ease-in-out;
+  transition-duration: 850;
+}
+.searchbar{
+    position: fixed;
+    right: 40px;
+    top: 8px;
+}
+#searchbarid{
+    box-shadow: 0 0 2px lightcyan;
+    background:url(./logoimages/seo.png); 
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    right: 13px;
+    top: 16px;
+    background-size: auto 100%;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    /*  */
+    cursor: pointer;
+
+    
+}
+#searchbarid:hover{
+    box-shadow: 0 0 4px white;
+}
+/* #searchbarid:active {
+    border-style: outset;
+  } */
+.searchbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 15px;
+    outline: none;
+  }
+/* css for navbar ends */
+
+/* creating addition option card */
+.additioncard{
+    width: 332px;
+    height: 400px;
+    color: black;
+    box-shadow: 2px 2px 51px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    border-radius: 5px;
+    background-image: url(./backgroundimages/walls-io-NtcuG3ocC_E-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.2s ease-in-out;
+    margin-right: 0;
+    margin-top: 25px;
+
+}
+.additioncard:hover{
+    box-shadow: 0 0 5px 6px rgb(218, 203, 203);
+}
+
+.additioncard img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    box-shadow: 0 0 15px black;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.2s linear;
+
+
+}
+.additioncard img:hover{
+    transform:rotate(1440deg) scale(1.2);
+ 
+}
+.deleteallcard{
+    width: 318px;
+    height: 400px;
+    box-shadow: 2px 2px 20px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+}
+.deleteallcard div{
+    color: lightgray;
+    font-size: 300%;
+    border: 3px dotted  rgb(140, 125, 125) ;
+    border-radius: 200px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+/* addition option card created */
+/* input field for new card css */
+
+/* main input form css */
+#inputform{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(210, 210, 210);
+    position: fixed;
+    width: 22vw;
+    height: 70vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: solid;
+}
+
+/* input form title and its input box */
+#inputformtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 76px;
+    
+}
+
+#inputformtitle label{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+#inputtitle{
+    width: 96%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: inset 0 0 12px 0px gray;
+    padding-left: 13px;
+    outline: none;
+}
+
+
+/*  input form timeline box */
+#inputformtimeline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    box-shadow: inset 0 0 20px 0px grey;
+    padding: 13px;
+    border-radius: 15px;
+}
+
+/* edition inputbox timeline from and to boxes */
+#inputformtimeline div{
+    width: 96%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4px;
+    align-items: center;
+}
+
+#inputformtimeline span{
+    font-size: x-large;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+#inputformtimeline label{
+    font-size: small;
+}
+#inputformtimeline p{
+    font-size: xx-large;
+}
+#inputformtimeline input{
+    border-radius: 15px;
+    border: 1px solid;
+    width: 36%;
+    padding-left: 7px;
+    box-shadow: inset 0 0 1px 0 gray;
+}
+
+/* description box */
+#inputformdescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+}
+#inputformdescription label{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+#inputformdescription textarea{
+    border-radius: 15px;
+    width: 91%;
+    padding: 13px;
+    box-shadow: inset 0 0 20px 0px grey;
+    outline: none;
+    height: 55%;
+}
+
+/* solving buttons css */
+#inputsavedelbuttons{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+}
+
+#inputsavedelbuttons button{
+     border-radius: 15px;
+     transform: scale(1.2);
+     box-shadow: inset 0 0 4px 0 gray;
+     width: 55px;
+     height: 36px;
+}
+#inputsavedelbuttons>div> button{
+    margin-left: 20px;
+}
+.cardsarea{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* input field ended */
+
+
+
+/* particular card css */
+.box {
+    background: url("https://t4.ftcdn.net/jpg/02/68/80/71/360_F_268807166_oPVMMlJcxy4OjBDkl9JPxqfJeMC98yNm.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 318px;
+    /* background:rgb(202, 178, 160); */
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px black;
+    color: #707070;
+    gap: 5px;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-weight: bolder;
+    transition: 0.2s ease-in-out;
+    padding-top: 8px;
+}
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: inset 0 0 5px 2px rgb(209, 200, 200);
+}
+.box h1{
+    align-self: center;
+    color: #ffdd9c;
+}
+#hr{
+    color: wheat;
+    width: 94%;
+}
+#span1{
+    align-self: self-start;
+    padding-left: 9px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: wheat;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    height: 40px;
+}
+
+.startdate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 90px;
+    color: chocolate;
+    
+}
+.imageArrow{
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 61px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.imageArrow img{
+    width: inherit;
+    height: inherit;
+}
+
+.enddate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 90px;
+    color: chocolate;
+}
+.description{
+    width: 290px;
+    overflow-x: none;
+    height: 200px;
+    margin-bottom: 5px;
+}
+#description1{
+    font-weight: bolder;
+    font-size: larger;
+    padding: 0 0 5px 10px;
+    color: wheat;
+}
+.description2 {
+    height: 150px;
+    width: 260px;
+    background-color: rgb(60 52 52);
+    margin-top: 8px;
+    border-radius: 25px;
+    padding: 14px;
+    color: aliceblue;
+    box-shadow: inset 0 0 10px 5px black;
+    font-size: smaller;
+    font-weight: 200;
+
+    word-wrap: break-word;
+}
+.last{
+    display: flex;
+    width: 92%;
+    gap: 9px;
+    height: 50px;
+    align-items: center;
+}
+.date{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 41px;
+    width: 128px;
+    color: wheat;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.custom{
+    height: inherit;
+    width: 119px;
+    margin-left: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+#but1{
+    background: url("./logoimages/pencil-crayon.png");
+    padding: 5px;
+    border-radius: 10px;
+    background-size: auto 100%;
+    width: 40px;
+    height: 40px;
+
+}
+#but2{
+    background: url("./logoimages/dustbin.png");background-size: auto 100%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+/* particular cards css ends */
+
+/* search bar list */
+#list{
+    position: fixed;
+    right: 56px;
+    top: 55px; 
+   border-radius: 50px;
+} 
+#list li{
+    display: flex;
+   padding-left: 5px;
+    align-items: center;
+    width: 200px; 
+   height: 26px;
+   background-color: white;
+   color: black;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   border-bottom: 3px solid grey;
+   font-size: small;
+}
+#list li:hover{
+    background-color: rgb(189, 196, 205); 
+    transform: scale(1);
+  
+}
+
+/* about us tab */
+#aboutustab{
+    position: absolute;
+    z-index: -1;
+    width: 700px;
+    height: 300px;
+    top: 50px;
+    left: 50px;
+}
+#detail{
+    position: absolute;
+    top :360px;
+    left:50px;
+    width: 250px;
+    height: 210px;
+    z-index: -1;
+
+}
+/* back button */
+#back{
+    position: absolute;
+    width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     background-color: orange;
+     left: -50px;
+     top: -50px;
+   transform: rotate(-80deg);
+   transition: transform 0.7s ease-in-out;
+}
+#h3:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+h3{
+    position: absolute;
+    bottom: 15px;
+    right: 23px;
+    color: BLACK;
+    FONT-SIZE: X-LARGE;
+}
+#back:hover{
+    transform: rotate(0deg);
+    cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* about us */
+#aboutustab h1{
+    color: wheat;
+    text-shadow: 0 0 4px whitesmoke;
+    font-size: 230%;
+    font-weight: bolder;
+}
+
+@media screen  and (max-width: 480px){
+    #aboutustab{
+       display: none;
+    }
+    #detail{
+        display: none;
+    }
+    #back,#aboutus{
+        display: none;
+    }
+    #baap{
+        padding-bottom: 100px;
+    }
+    #searcharea{
+        width: 70px;
+        height: 15px;
+        right: 20px;
+    }
+    #logoimage{
+        margin-left: -29px;
+    }
+    .right>ul{
+        gap: 5px;
+        margin-left: -80px;
+    }
+    #searchbarid
+    {
+        width: 25px;
+        height: 25px;
+        right: 25px;top: 20px;
+    }
+    .searchbar{
+        top: 11px;
+    }
+    #inputform{
+        width: 70vw;
+        height: 70vh;
+    }
+
+    
+}
+@media screen and (max-width:900px) and (min-width:480px){
+    #aboutus{
+        display: none;
+    }
+    .right>ul{
+        gap: 15px;
+        margin-left: -25px;
+    }
+    #inputform{
+        width: 45vw;
+        height: 40vh;
+        top: 28%;
+    }
+    #baap{
+        padding-bottom: 100px;
+    }
+}
